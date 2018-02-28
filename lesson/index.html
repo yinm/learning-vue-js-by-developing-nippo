@@ -6,21 +6,24 @@
 </head>
 <body>
   <div id="app">
+    <input type="text" v-model="message">
     <ul>
-      <span v-if="display">top secret</span>
-      <button v-on:click="change()">open top secret</button>
+      <li v-for="item in items">{{ item.message }}</li>
     </ul>
+    <button v-on:click="addItem">addItem</button>
   </div>
 
   <script>
     var app = new Vue({
       el: '#app',
       data: {
-        display: false
+        message: '',
+        items: [],
       },
       methods: {
-        change: function() {
-          this.display = true;
+        addItem: function() {
+          this.items.push({message: this.message});
+          this.message = '';
         }
       }
     })
