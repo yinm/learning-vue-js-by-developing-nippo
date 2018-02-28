@@ -1,1 +1,1 @@
-# learning-vue-js-by-developing-nippo
+[hypermkt/training/learning-vue-js-by-developing-nippo at master · hypermkt/hypermkt](https://github.com/hypermkt/hypermkt/tree/master/training/learning-vue-js-by-developing-nippo)をやってます。
